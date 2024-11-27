@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    color: orange;
+    background-color: #202020;
+    margin: 20px;
+}
+
+/* Kontener */
+.container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Suwak - domyślny wygląd */
+.slider-container {
+    margin: 20px 0;
+}
+
+input[type="range"] {
+    -webkit-appearance: none; /* Dla przeglądarek WebKit */
+    appearance: none;
+    width: 100%;
+    height: 8px; /* Grubość paska */
+    background: #ddd; /* Kolor tła suwaka */
+    border-radius: 4px;
+    outline: none;
+    transition: background 0.3s ease-in-out;
+}
+
+input[type="range"]:hover {
+    background: #ccc; /* Jaśniejszy kolor na hover */
+}
+
+/* Kolor suwaka dla przeglądarek WebKit (np. Chrome, Safari) */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; /* Szerokość kciuka */
+    height: 20px; /* Wysokość kciuka */
+    background: linear-gradient(to right, red, orange); /* Kolor kciuka */
+    border-radius: 50%; /* Zaokrąglony kształt */
+    margin-top: -6px; /* Wyrównanie kciuka w pionie */
+    border: 2px solid #202020;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: linear-gradient(to right, red, orange);  /* Kolor kciuka po najechaniu */
+}
+
+/* Styl dla toru suwaka */
+input[type="range"]::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, orange, red); /* Gradient na torze */
+    height: 8px;
+    border-radius: 4px;
+}
+/* Informacje poniżej suwaka */
+.info {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}

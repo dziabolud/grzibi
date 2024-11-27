@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suwak z punktami i poziomami</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Suwak z punktami i poziomami</h1>
+        <div class="slider-container">
+            <label for="slider">Wybierz wartość procentową:</label>
+            <input type="range" id="slider" min="0" max="100" value="0">
+            <br>
+            <label for="percentage">Wprowadź wartość procentową:</label>
+            <input type="number" id="percentage" min="0" max="100" value="0">%
+        </div>
+        <div class="info">
+            <p>Punkty: <span id="points">0</span></p>
+            <p>Poziom: <span id="level">1</span></p>
+            <p>Bonus: <span id="bonus">1.2</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
