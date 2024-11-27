@@ -22,7 +22,7 @@ input[type="range"] {
     appearance: none;
     width: 100%;
     height: 8px; /* Grubość paska */
-    background: #ddd; /* Kolor tła suwaka */
+    background: orange; /* Kolor tła suwaka */
     border-radius: 4px;
     outline: none;
     transition: background 0.3s ease-in-out;
